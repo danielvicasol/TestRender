@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CRUD PostgreSQL</title>
-    <link rel="stylesheet" href="/static/styles.css">
+<title>CRUD completo</title>
+<link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
+<h1>CRUD PostgreSQL</h1>
+<button onclick="setup()">Setup BD</button>
+<button onclick="load()">Recargar</button>
 
-<h1>Gestor PostgreSQL</h1>
-
-<button onclick="setup()">Crear tabla</button>
-<button onclick="load()">Cargar datos</button>
-
-<h2>Nuevo registro</h2>
+<h2>Nuevo</h2>
 <input id="nombre" placeholder="Nombre">
 <input id="email" placeholder="Email">
 <button onclick="create()">Guardar</button>
 
 <table>
-    <thead>
-        <tr>
-            <th>ID</th><th>Nombre</th><th>Email</th><th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody id="table"></tbody>
+<thead>
+<tr><th>ID</th><th>Nombre</th><th>Email</th><th>Acciones</th></tr>
+</thead>
+<tbody id="table"></tbody>
 </table>
 
 <script src="/static/app.js"></script>
